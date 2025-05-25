@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jia Shah | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="logo">JS</div>
+    <nav>
+      <a href="#hero" title="Home"><i class="fas fa-home"></i></a>
+      <a href="#about" title="About"><i class="fas fa-user"></i></a>
+      <a href="#projects" title="Projects"><i class="fas fa-code"></i></a>
+      <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="https://www.linkedin.com/in/jia-shah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jiashah" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="glass-card hero-section">
+      <div class="avatar-container">
+        <img src="image.png" alt="Jia Shah" class="avatar">
+      </div>
+      <div class="hero-content">
+        <h1><span class="gradient-text">Jia Shah</span></h1>
+        <p class="hero-subtitle">I'm a curious and enthusiastic software developer with a passion for coding,
+          problem-solving, and exploring innovative technologies to build impactful solutions.</p>
+        <div class="hero-buttons">
+          <a href="https://drive.google.com/file/d/1jbxib84d2YU0vJTtx-NLijo9cHDNW6V_/view?usp=sharing"
+            class="btn glass-btn" target="_blank"><i class="fas fa-download"></i> CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="glass-card about-section">
+  <h2>About Me</h2>
+  <p>
+    I'm a B.Tech CSE student at VIT Chennai...
+  </p>
+  <div class="tab-container">
+    <button class="tab-btn active" data-tab="experience">Experience</button>
+    <button class="tab-btn" data-tab="skills">Skills</button>
+    <button class="tab-btn" data-tab="education">Education</button>
+  </div>
+  <div class="tab-content">
+    <div id="experience" class="tab-pane active">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <img src="logo.png" alt="Reliance Industries Logo" style="width: 30px; height: 30px;">
+              <h3 style="margin: 0;">Reliance Industries Ltd.</h3>
+            </div>
+            <span>Machine Learning Intern</span>
+            <ul>
+              <li>Optimized ML models for gasifier reactor runtime prediction (scikit-learn, TensorFlow).</li>
+              <li>Built real-time data pipelines (pyodbc).</li>
+              <li>XGBoost model achieved 98% accuracy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="tab-pane">
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C, C++, HTML/CSS, JavaScript, MySQL</li>
+        <li><strong>Tools:</strong> VS Code, Android Studio, Figma, Jupyter Notebook</li>
+        <li><strong>Tech:</strong> Linux, Tailwind CSS, GitHub, LaTeX, React, Next.js, Node.js, MongoDB, Flutter, ML Libraries</li>
+      </ul>
+    </div>
+    <div id="education" class="tab-pane">
+      <ul>
+        <li>VIT Chennai - B.Tech CSE</li>
+        <li>Expected Graduation: 2027</li>
+        <li>Current CGPA: 9.35/10</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-flex">
+        <div class="project-glass-card">
+          <img src="project1.png" alt="Dorm Deal">
+          <div>
+            <h3>Dorm Deal</h3>
+            <p>An e-commerce website designed to help hostelers conveniently buy and sell items, with a built-in chat
+              feature to communicate directly with vendors for any queries.<br><span class="tech">HTML, CSS, JS,
+                MongoDB, Node.js</span></p>
+          </div>
+        </div>
+        <div class="project-glass-card">
+          <img src="project2.png" alt="Flashcards">
+          <div>
+            <h3>Flashcards</h3>
+            <p>A revision app that generates flashcards to help students review and reinforce key concepts effectively.
+              <br><span class="tech">Flutter</span></p>
+          </div>
+        </div>
+        <div class="project-glass-card">
+          <img src="project3.png" alt="Trend Predictor">
+          <div>
+            <h3>Trend Predictor</h3>
+            <p>Developed for Myntra HackerRamp, a CNN-based Deep Learning model using TensorFlow that classifies
+              clothing items into various fashion trends.<br><span class="tech">Python, TensorFlow</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="glass-card contact-section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jiashah2100@gmail.com">jiashah2100@gmail.com</a></p>
+      <div class="social-links">
+  <a href="https://www.linkedin.com/in/jia-shah/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/jiashah" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+ <a href="https://leetcode.com/u/Jiashah_/" target="_blank" aria-label="LeetCode">
+  <img src="leetcode.png" alt="LeetCode" class="leetcode-img-icon" />
+</a>
+
+</div>
+
+    </section>
+
+    <footer>
+      <p>© 2025 Jia Shah</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --bg: #10131a;
+  --glass: rgba(30, 34, 45, 0.8);
+  --accent: #7f5cff;
+  --accent2: #7f5cff;
+  --accent3:rgb(220, 216, 216);
+  --text: #dbd9d9;
+  --muted: #d7d7d7;
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --border: 1.5px solid rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 70px;
+  background: linear-gradient(180deg, #181c2b 0%, #10131a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 16px 0 rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-bottom: auto;
+}
+
+.sidebar nav a {
+  color: var(--muted);
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active {
+  color: var(--accent);
+}
+
+.sidebar-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sidebar-social a {
+  color: var(--muted);
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.sidebar-social a:hover { color: var(--accent2); }
+
+main {
+  margin-left: 90px;
+  width: 100%;
+  padding: 3rem 2vw 2rem 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.glass-card {
+  background: var(--glass);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 22px;
+  padding: 2.2rem 2rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(18px);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 320px;
+  position: relative;
+}
+
+.avatar-container {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  object-fit: cover;
+  box-shadow: 0 4px 32px 0 rgba(127, 92, 255, 0.15);
+  transition: transform 0.3s;
+  background: #181c2b;
+}
+
+.avatar:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 8px 32px 0 rgba(56, 239, 125, 0.18);
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  letter-spacing: 1.2px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-buttons {
+  margin-top: 0.7rem;
+}
+
+.btn, .glass-btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.7rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 14px 0 rgba(127,92,255,0.15);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.glass-btn {
+  background: var(--glass);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.glass-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.about-section p {
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.tab-container {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
+    /* No box-shadow here! */
+  }
+  
+  
+
+.tab-content {
+  min-height: 80px;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.5s;
+}
+.tab-pane.active { display: block; }
+
+#experience ul li,
+#skills ul li {
+  margin-bottom: 1.2rem;
+  line-height: 1;
+}
+
+.tab-pane ul li {
+  margin-bottom: 1.2rem;
+  line-height: 1;
+}
+
+
+.timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+
+  
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: var(--accent);
+}
+
+.timeline-content span {
+  font-size: 0.98rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.timeline-content ul {
+  margin-top: 0.2rem;
+  padding-left: 1.1rem;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.projects-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-glass-card {
+  background: var(--glass);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 18px;
+  width: 320px;
+  min-height: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.3rem;
+}
+
+.project-glass-card:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 12px 40px 0 rgba(127,92,255,0.13);
+}
+
+.project-glass-card img {
+  width: 100%;
+  height: 200px; /* Increased image height */
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.project-card-content {
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* If you can't wrap in .project-card-content, use: */
+.project-glass-card h3,
+.project-glass-card p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.project-glass-card h3 {
+  padding-top: 1.2rem;
+}
+.project-glass-card p {
+  padding-bottom: 1.2rem;
+}
+
+.tech {
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section a {
+  color: var(--accent2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-section a:hover {
+  color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this for vertical alignment */
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+
+.social-links a {
+  font-size: 2rem;
+  color: var(--muted);
+  transition: color 0.2s, transform 0.2s;
+}
+.social-links a:hover {
+  color: var(--accent2);
+  transform: translateY(-5px) scale(1.1);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-section { flex-direction: column; gap: 1.5rem; }
+  .projects-flex { flex-direction: column; align-items: center; }
+  main { padding: 2rem 1vw; }
+}
+
+@media (max-width: 600px) {
+  .sidebar { width: 52px; padding: 1rem 0; }
+  .logo { font-size: 1.3rem; }
+  main { margin-left: 60px; padding: 1rem 2vw; }
+  .glass-card { padding: 1.1rem 0.7rem; }
+  .avatar { width: 90px; height: 90px; }
+  .project-glass-card { width: 98%; min-width: 0; }
+}
+
+/* --- Customizations for About Tabs and Experience --- */
+.tab-btn:hover, .tab-btn.active {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  #experience ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #experience ul li {
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0.6rem;
+  }
+  
+.leetcode-img-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  filter: brightness(1.2);
+  transition: transform 0.2s, filter 0.2s;
+  margin-bottom: 0; /* Reset any margin that could push it down */
+}
+
+
+.social-links a:hover .leetcode-img-icon {
+  transform: translateY(-8px) scale(1.1);
+  filter: brightness(2);
+}
