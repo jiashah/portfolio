@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jia Shah | Portfolio</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -30,14 +32,14 @@
     <!-- HERO SECTION -->
     <section id="hero" class="glass-card hero-section">
       <div class="avatar-container">
-        <img src="image.png" alt="Jia Shah" class="avatar">
+        <img src="profile_photo.jpg" alt="Jia Shah" class="avatar">
       </div>
       <div class="hero-content">
         <h1><span class="gradient-text">Jia Shah</span></h1>
         <p class="hero-subtitle">I'm a curious and enthusiastic software developer with a passion for coding,
           problem-solving, and exploring innovative technologies to build impactful solutions.</p>
         <div class="hero-buttons">
-          <a href="https://drive.google.com/file/d/1jbxib84d2YU0vJTtx-NLijo9cHDNW6V_/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1wEpj1CsU5618IF9VfJTy7h7ZrVJ40NAs/view?usp=sharing"
             class="btn glass-btn" target="_blank"><i class="fas fa-download"></i> CV</a>
         </div>
       </div>
@@ -45,52 +47,136 @@
 
     <!-- ABOUT SECTION -->
     <section id="about" class="glass-card about-section">
-  <h2>About Me</h2>
-  <p>
-    I'm a B.Tech CSE student at VIT Chennai...
-  </p>
-  <div class="tab-container">
-    <button class="tab-btn active" data-tab="experience">Experience</button>
-    <button class="tab-btn" data-tab="skills">Skills</button>
-    <button class="tab-btn" data-tab="education">Education</button>
-  </div>
-  <div class="tab-content">
-    <div id="experience" class="tab-pane active">
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <img src="logo.png" alt="Reliance Industries Logo" style="width: 30px; height: 30px;">
-              <h3 style="margin: 0;">Reliance Industries Ltd.</h3>
+      <h2>About Me</h2>
+      <p>
+        I'm a B.Tech CSE student at VIT Chennai...
+      </p>
+      <div class="tab-container">
+        <button class="tab-btn active" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="extracurricular">Extracurricular</button>
+        <button class="tab-btn" data-tab="certifications">Certifications</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+      </div>
+      <div class="tab-content">
+        <div id="experience" class="tab-pane active">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <img src="softinvo_technologies_logo.jpg" alt="Reliance Industries Logo" style="width: 30px; height: 30px;">
+                  <h3 style="margin: 0;">Softinvo Technologies</h3>
+                </div>
+                <span>Mobile App Development Intern | July 2025 – Present</span>
+                <ul>
+                  <li>Building a cross-platform fitness app using Flutter and Dart with workout tracking, custom
+                    routines.</li>
+                  <li>Integrating RESTful APIs, optimizing performance, and ensuring responsive UI across Android and
+                    iOS.</li>
+                </ul>
+              </div>
             </div>
-            <span>Machine Learning Intern</span>
-            <ul>
-              <li>Optimized ML models for gasifier reactor runtime prediction (scikit-learn, TensorFlow).</li>
-              <li>Built real-time data pipelines (pyodbc).</li>
-              <li>XGBoost model achieved 98% accuracy.</li>
-            </ul>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <img src="logo.png" alt="Reliance Industries Logo" style="width: 30px; height: 30px;">
+                  <h3 style="margin: 0;">Reliance Industries Ltd.</h3>
+                </div>
+                <span>Machine Learning Intern</span>
+                <ul>
+                  <li>Optimized ML models for gasifier reactor runtime prediction (scikit-learn, TensorFlow).</li>
+                  <li>Built real-time data pipelines (pyodbc).</li>
+                  <li>XGBoost model achieved 98% accuracy.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="skills" class="tab-pane">
+          <ul>
+            <li><strong>Programming Languages:</strong> Python, C++, C, Java, JavaScript, Dart, HTML, CSS, Bash, SQL
+            </li>
+            <li><strong>Frameworks:</strong> React.js, Next.js, Node.js, Spring Boot, Flutter, React Native, Tailwind
+              CSS, MySQL, MongoDB</li>
+            <li><strong>Libraries:</strong> TensorFlow, PyTorch, Keras, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+            </li>
+            <li><strong>Tools:</strong> Git, GitHub, VS Code, Android Studio, Jupyter Notebook, Linux, Figma</li>
+          </ul>
+        </div>
+        <div id="extracurricular" class="tab-pane">
+          <div class="extracurricular-list">
+            <div class="extracurricular-item">
+              <div class="extracurricular-content">
+                <h4>Enactus VITC</h4>
+                <span>Project Lead</span>
+              </div>
+              <div class="extracurricular-date">2023 – Present</div>
+            </div>
+            <div class="extracurricular-item">
+              <div class="extracurricular-content">
+                <h4>GSsoc'25 (GirlScript Summer of Code)</h4>
+                <span>Contributor</span>
+              </div>
+              <div class="extracurricular-date">2025 – Present</div>
+            </div>
+            <div class="extracurricular-item">
+              <div class="extracurricular-content">
+                <h4>Android Club</h4>
+                <span>Technical Member</span>
+              </div>
+              <div class="extracurricular-date">2024 – Present</div>
+            </div>
+            <div class="extracurricular-item">
+              <div class="extracurricular-content">
+                <h4> Tech Researchers Club</h4>
+                <span>Web Dev Member</span>
+              </div>
+              <div class="extracurricular-date">2023 – 2024</div>
+            </div>
+          </div>
+        </div>
+        <div id="certifications" class="tab-pane">
+          <div class="certifications-grid">
+            <div class="certification-item">
+              <div class="certification-image">
+                <img src="certificate1.png" alt="AWS Certificate">
+              </div>
+              <div class="certification-content">
+                <br>
+                <h4>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="education" class="tab-pane">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Vellore Institute of Technology, Chennai</h3>
+                <span>Bachelor of Technology in Computer Science | Aug 2023 – July 2027</span>
+                <ul>
+                  <li>CGPA: 9.26</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>K. D. Ambani Reliance Foundation School</h3>
+                <span>Senior Secondary School | 2020 – 2023</span>
+                <ul>
+                  <li>Class X: 94.6%</li>
+                  <li>Class XII: 92.4%</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="skills" class="tab-pane">
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, C, C++, HTML/CSS, JavaScript, MySQL</li>
-        <li><strong>Tools:</strong> VS Code, Android Studio, Figma, Jupyter Notebook</li>
-        <li><strong>Tech:</strong> Linux, Tailwind CSS, GitHub, LaTeX, React, Next.js, Node.js, MongoDB, Flutter, ML Libraries</li>
-      </ul>
-    </div>
-    <div id="education" class="tab-pane">
-      <ul>
-        <li>VIT Chennai - B.Tech CSE</li>
-        <li>Expected Graduation: 2027</li>
-        <li>Current CGPA: 9.35/10</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- PROJECTS SECTION -->
     <section id="projects">
@@ -110,7 +196,8 @@
           <div>
             <h3>Flashcards</h3>
             <p>A revision app that generates flashcards to help students review and reinforce key concepts effectively.
-              <br><span class="tech">Flutter</span></p>
+              <br><span class="tech">Flutter</span>
+            </p>
           </div>
         </div>
         <div class="project-glass-card">
@@ -121,11 +208,27 @@
               clothing items into various fashion trends.<br><span class="tech">Python, TensorFlow</span></p>
           </div>
         </div>
+        <div class="project-glass-card">
+          <img src="project4.jpg" alt="PhotoBooth App">
+          <div>
+            <h3>PhotoBooth App</h3>
+            <p>Developed a cross-platform React Native app for capturing timed selfies and generating printable strips
+              using Camera, ViewShot, and MediaLibrary.<br><span class="tech">React Native, Camera API, ViewShot,
+                MediaLibrary</span></p>
+          </div>
+        </div>
+        <div class="project-glass-card">
+          <img src="project5.png" alt="VKhabar">
+          <div>
+            <h3>VKhabar</h3>
+            <p>Built a real-time campus news portal using Next.js, TypeScript, and MongoDB to streamline event updates
+              and student announcements.<br><span class="tech">Next.js, TypeScript, MongoDB</span></p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="glass-card contact-section">
+   <section id="contact" class="glass-card contact-section">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:jiashah2100@gmail.com">jiashah2100@gmail.com</a></p>
       <div class="social-links">
@@ -138,13 +241,3 @@
 </div>
 
     </section>
-
-    <footer>
-      <p>© 2025 Jia Shah</p>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
